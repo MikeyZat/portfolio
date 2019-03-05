@@ -1,0 +1,137 @@
+@import "./colors";
+
+a {
+  text-decoration: none;
+}
+
+.navigation-bar {
+  & {
+    opacity: 0.95;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    background: black;
+    height: 50px;
+    width: 100%;
+    transition: height 0.3s, opacity 0.3s;
+  }
+  .hamburger {
+    & {
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 20px;
+      float: right;
+      width: 32px;
+      height: 28px;
+      border: 0;
+      border-top: 4px solid $font-on-black;
+      background: transparent;
+      position: relative;
+      top: 0;
+      right: 0;
+      transition: transform 0.3s, margin-right 0.3s, margin-top 0.3s;
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      border-top: 4px solid $font-on-black;
+      transform: translateY(6px);
+    }
+    &::after {
+      transform: translateY(15px);
+      transition: 0.3s transform linear;
+    }
+  }
+
+  .links-list {
+    li {
+      margin: 10px;
+      list-style: none;
+      a{
+        &{
+          color: $font-on-black;
+        }
+        &.active,
+        &:hover{
+          color: $highlight-on-black;
+        }
+      }
+    }
+    & {
+      display: inline-block;
+      opacity: 0;
+      transition: opacity 0.3s, box-shadow 0.3s;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: black;
+      pointer-events: none;
+    }
+  }
+  &.nav-open {
+    .links-list {
+      opacity: 1;
+      pointer-events: auto;
+      -webkit-box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
+      -moz-box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
+      box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
+    }
+    .hamburger {
+      & {
+        transform: rotate(45deg) translateY(6px);
+        border: none;
+      }
+      &::after {
+        transform: rotate(-90deg) translateX(-6px);
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  &.nav-scrolled{
+    &{
+      background: white;
+      opacity: 0.85;
+      height: 35px;
+    }
+    .hamburger{
+      &{
+        margin: 5px;
+        width: 24px;
+        height: 21px;
+        border: 0;
+        border-top: 3px solid $background-black;
+      }
+      &::before,
+      &::after{
+        border-top: 3px solid $background-black;
+        transform: translateY(5px);
+      }
+      &::after{
+        transform: translateY(13px);
+        transition: 0.3s transform linear;
+      }
+    }
+    &.nav-open{
+      .hamburger{
+        &{
+          transform: rotate(45deg) translateY(6px);
+          border: none;
+        }
+        &::after{
+          transform: rotate(-90deg) translateX(-5.5px);
+        }
+      }
+    }
+  }
+}
+
+
+

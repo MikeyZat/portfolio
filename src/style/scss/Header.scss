@@ -1,0 +1,111 @@
+@import './colors';
+
+.smoke-container {
+  & {
+    height: 100vh;
+    background: black;
+  }
+  h1 {
+    & {
+      @media screen and (min-width: 800px) {
+        font-size: 8vw;
+      }
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      color: $font-on-black;
+      font-size: 10vw;
+      letter-spacing: 3vw;
+      animation: moveUp .5s ease-out forwards;
+      animation-delay: 6s;
+    }
+    span{
+      opacity:0;
+      display:inline-block;
+      animation: animate 1s linear forwards;
+      &:nth-child(1){
+        animation-delay: 2s;
+      }
+      &:nth-child(2){
+        animation-delay: 2.5s;
+      }
+      &:nth-child(3){
+        animation-delay: 3s;
+      }
+      &:nth-child(4){
+        animation-delay: 3.5s;
+      }
+      &:nth-child(5){
+        animation-delay: 4s;
+      }
+      &:nth-child(6){
+        animation-delay: 4.5s;
+      }
+      &:nth-child(7){
+        animation-delay: 4s;
+      }
+      &:nth-child(8){
+        animation-delay: 2s;
+      }
+      &:nth-child(9){
+        animation-delay: 2.5s;
+      }
+      &:nth-child(10){
+        animation-delay: 3s;
+      }
+      &:nth-child(11){
+        animation-delay: 3.5s;
+      }
+      &:nth-child(12){
+        animation-delay: 4s;
+      }
+      &:nth-child(13){
+        animation-delay: 4.5s;
+      }
+      &:nth-child(14){
+        animation-delay: 4s;
+      }
+      &:nth-child(15){
+        animation-delay: 4s;
+      }
+      &:nth-child(16){
+        animation-delay: 4s;
+      }
+    }
+  }
+  video{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width:100%;
+  }
+}
+
+@keyframes moveUp {
+  0%{
+    top:50%;
+  }
+  100%{
+    top:30%;
+  }
+}
+
+@keyframes animate {
+  0%{
+    opacity:0;
+    transform: rotateY(90deg);
+    filter:blur(10px);
+  }
+  100%{
+    opacity:1;
+    transform: rotateY(0deg);
+    filter:blur(0);
+  }
+
+}
