@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../style/css/Header.minx.css';
 
-const Header = ({english}) => {
+const Header = ({english,...props}) => {
     return (<header className={"smoke-container"}>
-        <video src="smoke.mp4" autoPlay muted></video>
+        <video src="smoke.mp4" autoPlay muted> </video>
         <h1>
             <span>M</span>
             <span>i</span>
@@ -25,7 +25,7 @@ const Header = ({english}) => {
         <p className={"intro"}>
             {!english ? "Aspirujący na web developera student Informatyki." : "Aspiring web developer & Computer Science student."}
         </p>
-        <a href={"#about_me"} className={"start"}><span className={"arrow"}> </span></a>
+        <a href={"#about"} className={"start"}><span className={"arrow"}> </span></a>
     </header>)
 };
 
