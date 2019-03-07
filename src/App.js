@@ -24,22 +24,41 @@ class App extends Component {
     };
 
     handleScroll = () => {
-        let height = window.innerHeight;
+        this.handleScrollNav();
+        this.handleScrollCards();
+    };
+
+    handleScrollNav() {
         let aboutY_top = document.getElementById("about").getBoundingClientRect().top;
-        let aboutY = document.getElementById("about").getBoundingClientRect().bottom;
         let nav = document.getElementsByClassName("navigation-bar")[0];
         if (aboutY_top < 10) {
             nav.classList.add("nav-scrolled");
         } else {
             nav.classList.remove("nav-scrolled");
         }
+    }
+
+    handleScrollCards() {
+        let card1 = document.getElementById("card1");
+        let card2 = document.getElementById("card2");
+        let card3 = document.getElementById("card3");
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        if (width > 1020 && (card1.getBoundingClientRect().top < height)) {
+            setTimeout(() => card1.classList.add("show"), 500);
+            setTimeout(() => card2.classList.add("show"), 2000);
+            setTimeout(() => card3.classList.add("show"), 3500);
+        }else{
+            if(card1.getBoundingClientRect().top<height)
+                setTimeout(() => card1.classList.add("show"), 500);
+            if(card2.getBoundingClientRect().top<height)
+                setTimeout(() => card2.classList.add("show"), 500);
+            if(card3.getBoundingClientRect().top<height)
+                setTimeout(() => card3.classList.add("show"), 500);
+        }
 
 
-        // let technologiesY = document.getElementById("technologies").getBoundingClientRect().bottom;
-        // let projectsY = document.getElementById("projects").getBoundingClientRect().bottom;
-        // let careerY = document.getElementById("career").getBoundingClientRect().bottom;
-        // let contactY = document.getElementById("contact").getBoundingClientRect().bottom;
-    };
+    }
 
     render() {
         let {english} = this.state;
