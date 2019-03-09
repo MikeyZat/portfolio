@@ -109,6 +109,7 @@
 
         }
         &.show {
+          pointer-events: all;
           img {
             animation: slow-show 1s linear forwards;
           }
