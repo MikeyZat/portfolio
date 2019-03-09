@@ -1,0 +1,23 @@
+@import "colors";
+
+%section-title {
+  text-align: center;
+  font-size: calc(30px + 2vw);
+  position: relative;
+  &::after {
+    content: "";
+    border: 2px solid $font-color;
+    background: $font-color;
+    display: block;
+    width: calc(15px + 3vw);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
+  }
+}
+
+%section-padding{
+  padding-top:50px;
+}

@@ -26,6 +26,7 @@ class App extends Component {
     handleScroll = () => {
         this.handleScrollNav();
         this.handleScrollCards();
+        this.handleScrollTechs();
     };
 
     handleScrollNav() {
@@ -56,9 +57,16 @@ class App extends Component {
             if(card3.getBoundingClientRect().top<height)
                 setTimeout(() => card3.classList.add("show"), 500);
         }
-
-
     }
+
+    handleScrollTechs = () =>{
+        let height = window.innerHeight;
+        let divs = document.getElementsByClassName("techs");
+        for( let i = 0; i<divs.length ; i++){
+            if(divs[i].getBoundingClientRect().top+50<height)
+                divs[i].classList.add("show");
+        }
+    };
 
     render() {
         let {english} = this.state;
@@ -67,7 +75,7 @@ class App extends Component {
                 <Navbar english={english} onClick={this.changeLanguage}/>
                 <Header english={english}/>
                 <AboutMe english={english}/>
-                {/*<Technologies/>*/}
+                <Technologies english={english}/>
                 {/*<Projects/>*/}
                 {/*<CareerPath/>*/}
                 {/*<Footer/>*/}

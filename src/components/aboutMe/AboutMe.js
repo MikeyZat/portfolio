@@ -13,12 +13,12 @@ const AboutMe = ({english}) => {
                 </article>
                 <article className="card second" id={"card2"}>
                     <h3>{!english?"Programowanie":"Programming"}</h3>
-                    <p>{!english?"Moja przygoda z programowaniem rozpoczęła się w 2018 roku. Na studiach używam języka C++ / C, prywatnie tworzę projekty w JavaScript, przy pomocy biblioteki ReactJS. W przeszłości zdarzyło mi się programować w języku Java, Python i używać baz danych SQL, jednak teraz skupiam się na technologiach front-endowych.":"My adventure with programming began in 2018. At the university I mostly use C++ / C, privately I make my projects in JavaScript using ReactJS library. In the past I happened to use Java, Python and SQL databases, however, I am focused on front-end technologies now."}
+                    <p>{!english?"Moja przygoda z programowaniem rozpoczęła się w 2018 roku. Na studiach używam języka C++ / C, prywatnie tworzę projekty w JavaScript, przy pomocy biblioteki React.js. W przeszłości zdarzyło mi się programować w języku Java, Python i używać baz danych SQL, jednak teraz skupiam się na technologiach front-endowych.":"My adventure with programming began in 2018. At the university I mostly use C++ / C, privately I make my projects in JavaScript using ReactJS library. In the past I happened to use Java, Python and SQL databases, however, I am focused on front-end technologies now."}
                     </p>
                 </article>
                 <article className="card third" id={"card3"}>
                     <h3>{!english?"Przyszłość":"Future"}</h3>
-                    <p>{!english?"W najbliższym czasie chciałbym zacząć uczyć się programowania w NodeJS, aby tworzyć również back-end moich aplikacji. Tym samym chciałbym zostać full-stack developerem i w tym kierunku się dalej rozwijać.":"In the nearest future I would like to start learning NodeJS. Therefore, I would be able not only to write front-end but back-end for my applications. Definitely, Full-Stack is something I would love to do in the future."}
+                    <p>{!english?"W najbliższym czasie chciałbym zacząć uczyć się programowania w Node.js, aby tworzyć również back-end moich aplikacji. Tym samym chciałbym zostać full-stack developerem i w tym kierunku się dalej rozwijać.":"In the nearest future I would like to start learning Node.js. Therefore, I would be able not only to write front-end but back-end for my applications. Definitely, Full-Stack is something I would love to do in the future."}
                     </p>
                 </article>
             </div>

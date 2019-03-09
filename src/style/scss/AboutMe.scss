@@ -1,28 +1,15 @@
-@import './colors';
-
+@import "colors";
+@import "multipleStyles";
 .about-section {
-  padding-top: 30px;
+  @extend %section-padding;
   h2 {
-    text-align: center;
-    font-size: calc(30px + 2vw);
-    position: relative;
-    &::after {
-      content: "";
-      border: 2px solid $font-color;
-      background: $font-color;
-      display: block;
-      width: calc(15px + 3vw);
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
-      bottom: -10px;
+    @extend %section-title;
     }
-  }
+
   .cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     .card {
       position:relative;
