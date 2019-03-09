@@ -18,6 +18,24 @@
   }
 }
 
+%pop-up-tech{
+  opacity:0;
+  position:absolute;
+  left:calc(-60px + 2vw);
+  width:150px;
+  background: white;
+  z-index: 2;
+  border-radius:5px;
+  text-align: center;
+  font-size:18px;
+  transition: opacity 1s;
+  -webkit-box-shadow: 0 6px 29px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 6px 29px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 6px 29px 0 rgba(0,0,0,0.75);
+  pointer-events: none;
+  font-weight:bold;
+}
+
 %section-padding{
   padding-top:50px;
 }
