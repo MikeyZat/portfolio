@@ -1,11 +1,28 @@
 @import "colors";
 @import "multipleStyles";
 
-.projects-section{
-  h2{
+.projects-section {
+  @extend %section-padding;
+  h2 {
     @extend %section-title;
   }
-  .projects-container{
+  .projects-container {
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .project {
+      position: relative;
+      .img-container {
 
+        .project-img {
+          width: 285px;
+          height: 380px;
+          border-radius: 5px;
+        }
+      }
+    }
   }
 }
