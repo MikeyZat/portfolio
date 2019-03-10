@@ -23,7 +23,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 0 50px;
+        padding: 0 70px;
         .technology {
           position: relative;
           display: block;
@@ -51,32 +51,51 @@
           &.rest-span {
             margin: 0;
             .details {
-              left: calc(-50px + 3.5vw);
+              left: calc(-30px + 3.5vw);
               top: calc(60px + 4vw);
             }
             .name {
-              left: calc(-50px + 3.5vw);
+              left: calc(-70px + 3.5vw);
               bottom: calc(50px + 6vw);
+            }
+            &:hover{
+              .details,
+              .name{
+                left: calc(-50px + 3.5vw);
+              }
             }
           }
           &.gulp-span {
             .details {
-              left: calc(-65px + 1vw);
+              left: calc(-45px + 1vw);
             }
             .name {
-              left: calc(-65px + 1vw);
+              left: calc(-85px + 1vw);
+            }
+            &:hover{
+              .details,
+              .name{
+                left: calc(-65px + 1vw);
+              }
             }
           }
           &.pwa-span {
             .details {
-              left: calc(-50px + 3.5vw);
+              left: calc(-30px + 3.5vw);
             }
             .name {
-              left: calc(-50px + 3.5vw);
+              left: calc(-70px + 3.5vw);
+            }
+            &:hover{
+              .details,
+              .name{
+                left: calc(-50px + 3.5vw);
+              }
             }
           }
           .details {
             @extend %pop-up-tech;
+            left:calc(-40px + 2vw);
             top: calc(30px + 4vw);
             height: 60px;
             .title {
@@ -92,6 +111,7 @@
           }
           .name {
             @extend %pop-up-tech;
+            left:calc(-80px + 2vw);
             bottom: calc(30px + 4vw);
             height: 30px;
           }
@@ -101,6 +121,7 @@
             }
             .details,
             .name {
+              left:calc(-60px + 2vw);
               opacity: 1;
               pointer-events: auto;
             }
@@ -109,7 +130,6 @@
 
         }
         &.show {
-          pointer-events: all;
           img {
             animation: slow-show 1s linear forwards;
           }

@@ -1,0 +1,1 @@
+.projects-section h2{text-align:center;font-size:calc(30px + 2vw);position:relative}.projects-section h2::after{content:"";border:2px solid #383d3e;background:#383d3e;display:block;width:calc(15px + 3vw);position:absolute;left:0;right:0;margin:auto;bottom:calc(-15px - 1vw)}

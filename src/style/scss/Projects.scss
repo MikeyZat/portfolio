@@ -1,0 +1,11 @@
+@import "colors";
+@import "multipleStyles";
+
+.projects-section{
+  h2{
+    @extend %section-title;
+  }
+  .projects-container{
+
+  }
+}

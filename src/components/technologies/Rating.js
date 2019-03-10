@@ -2,7 +2,7 @@ import React from 'react';
 import '../../style/css/Technologies.minx.css';
 
 
-const Rating = ({stars}) => {
+const Rating = ({english,stars}) => {
     let starsView = [];
     for(let i =0 ; i < stars ; i++){
         starsView.push(<span className={"fa fa-star checked"}> </span>)
@@ -12,7 +12,7 @@ const Rating = ({stars}) => {
     }
 
     return <span className={"details"}>
-        <span className={"title"}>Zaawansowanie</span>
+        <span className={"title"}>{!english?"Zaawansowanie":"Level"}</span>
         {starsView}
     </span>
 };
