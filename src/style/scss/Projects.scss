@@ -15,13 +15,19 @@
     align-items: center;
     .project {
       position: relative;
-      margin: 20px 5px;
+      margin: 70px 5px;
+      opacity:0;
+      transition: opacity 1s, margin-top .5s;
       .img-container {
         .project-img {
           width: calc(285px + 3vw);
           height: calc(380px + 4vw);
           border-radius: 5px;
         }
+      }
+      &.show{
+        margin-top:20px;
+        opacity:1;
       }
       .info-container {
         position: absolute;

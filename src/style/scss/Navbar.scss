@@ -179,9 +179,9 @@ a {
     .links-list {
       opacity: 1;
       pointer-events: auto;
-      -webkit-box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
-      -moz-box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
-      box-shadow: 0 8px 12px 0 rgba(45, 44, 45, 1);
+      -webkit-box-shadow: 0 10px 13px -4px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0 10px 13px -4px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 13px -4px rgba(0,0,0,0.5);
     }
     .hamburger {
       & {
@@ -233,13 +233,13 @@ a {
         }
       }
       .polish {
-        color: $highligh;
+        color: $highlight-on-black;
       }
       .english {
         right: -10px;
       }
       input:checked ~ .english {
-        color: $highligh;
+        color: $highlight-on-black;
       }
     }
     &.nav-open {
@@ -255,6 +255,10 @@ a {
       .links-list a {
         color: $font-color;
         font-weight: bold;
+        &.active,
+        &:hover {
+          color: $highlight-on-black;
+        }
       }
 
     }

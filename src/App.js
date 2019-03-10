@@ -27,6 +27,7 @@ class App extends Component {
         this.handleScrollNav();
         this.handleScrollCards();
         this.handleScrollTechs();
+        this.handleScrollProjects();
     };
 
     handleScrollNav() {
@@ -49,22 +50,33 @@ class App extends Component {
             setTimeout(() => card1.classList.add("show"), 500);
             setTimeout(() => card2.classList.add("show"), 2000);
             setTimeout(() => card3.classList.add("show"), 3500);
-        }else{
-            if(card1.getBoundingClientRect().top<height)
+        } else {
+            if (card1.getBoundingClientRect().top < height)
                 setTimeout(() => card1.classList.add("show"), 500);
-            if(card2.getBoundingClientRect().top<height)
+            if (card2.getBoundingClientRect().top < height)
                 setTimeout(() => card2.classList.add("show"), 500);
-            if(card3.getBoundingClientRect().top<height)
+            if (card3.getBoundingClientRect().top < height)
                 setTimeout(() => card3.classList.add("show"), 500);
         }
     }
 
-    handleScrollTechs = () =>{
+    handleScrollTechs = () => {
         let height = window.innerHeight;
         let divs = document.getElementsByClassName("techs");
-        for( let i = 0; i<divs.length ; i++){
-            if(divs[i].getBoundingClientRect().top+50<height)
+        for (let i = 0; i < divs.length; i++) {
+            if (divs[i].getBoundingClientRect().top + 50 < height)
                 divs[i].classList.add("show");
+        }
+    };
+
+    handleScrollProjects = () => {
+        let height = window.innerHeight;
+        let projects = document.getElementsByClassName("project");
+        for (let i = 0; i < projects.length; i++) {
+            if (projects[i].getBoundingClientRect().top < height)
+                projects[i].classList.add("show");
+            else
+                projects[i].classList.remove("show");
         }
     };
 
