@@ -45,7 +45,7 @@
         visibility:visible;
         backface-visibility: hidden;
         transition: transform 0.5s;
-        background: $font-color;
+        background: linear-gradient($font-color,$image-hover);
       }
       &.first::after{
         content:'Edukacja i doświadczenie';
