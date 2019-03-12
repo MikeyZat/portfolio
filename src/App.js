@@ -89,7 +89,7 @@ class App extends Component {
                 <AboutMe english={english}/>
                 <Technologies english={english}/>
                 <Projects english={english}/>
-                {/*<CareerPath english={english}/>*/}
+                <CareerPath english={english}/>
                 {/*<Footer english={english}/>*/}
             </div>
         );
