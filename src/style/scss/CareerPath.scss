@@ -21,7 +21,7 @@
           position: relative;
           padding: 30px 20px;
           &:hover {
-            background: $image-hover;
+            background: #007faf;
             .date {
               background: #e91e63;
             }
@@ -59,7 +59,7 @@
           .text {
             transition:.5s;
             margin: 10px 0 0;
-            font-size: calc(22px + 2vw);
+            font-size: calc(24px + 1vw);
             padding: 0;
             color: $font-color;
           }
