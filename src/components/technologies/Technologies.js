@@ -4,8 +4,8 @@ import Rating from './Rating';
 import Technology from "./Technology";
 
 const Technologies = ({english}) => {
-    return <section id={"technologies"} className={"section-tech"}>
-        <h2>{!english ? "Technologie" : "Technologies"}</h2>
+    return <section id={"technologies"} className={"tech-section"}>
+        <h2 className={"slide-left"}>{!english ? "Technologie" : "Technologies"}</h2>
         <div className={"container"}>
             <article className={"tech-container"}>
                 <h3>{!english ? "Znam i używam na codzień" : "Known and daily used"}:</h3>

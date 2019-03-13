@@ -5,7 +5,7 @@ import ProjectComponent from "./ProjectComponent";
 const Projects = ({english}) => {
 
     return <section id={"projects"} className={"projects-section"}>
-        <h2>{!english ? "Projekty" : "Projects"}</h2>
+        <h2 className={"slide-left"}>{!english ? "Projekty" : "Projects"}</h2>
         <div className={"projects-container"}>
             <ProjectComponent english={english}
                               name={"flaneczki.pl"}

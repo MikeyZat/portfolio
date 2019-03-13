@@ -4,7 +4,7 @@ import '../../style/css/AboutMe.minx.css';
 const AboutMe = ({english}) => {
     return (
         <section id={"about"} className={"about-section"}>
-            <h2>{!english ? "O mnie" : "About me"}</h2>
+            <h2 className={"slide-left"}>{!english ? "O mnie" : "About me"}</h2>
             <div className={"cards-container"}>
                 <article className="card first" id={"card1"}>
                     <h3 className={"long"}>{!english?"Edukacja i doświadczenie":"Education and experience"}</h3>

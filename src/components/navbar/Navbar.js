@@ -16,7 +16,7 @@ const Navbar = ({english, onClick}) => {
         </label>
         <button className="hamburger" onClick={toggleNavClass}/>
         <ul className={"links-list"}>
-            <li><a href={"# "} onClick={toggleNavClass}>Home</a></li>
+            <li><a href={"# "} onClick={toggleNavClass} className={"active"}>Home</a></li>
             <li><a href={"#about"} onClick={toggleNavClass}>{!english ? "O mnie" : "About me"}</a></li>
             <li><a href={"#technologies"} onClick={toggleNavClass}>{!english ? "Technologie" : "Technologies"}</a></li>
             <li><a href={"#projects"} onClick={toggleNavClass}>{!english ? "Projekty" : "Projects"}</a></li>

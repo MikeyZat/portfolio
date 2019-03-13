@@ -28,6 +28,7 @@ class App extends Component {
         this.handleScrollCards();
         this.handleScrollTechs();
         this.handleScrollProjects();
+        this.handleAllSectionsScroll();
     };
 
     handleScrollNav() {
@@ -80,6 +81,42 @@ class App extends Component {
         }
     };
 
+    handleAllSectionsScroll = () => {
+        let about = document.getElementById("about");
+        let technologies = document.getElementById("technologies");
+        let projects = document.getElementById("projects");
+        let career = document.getElementById("career");
+        let contact = document.getElementById("contact");
+        let links = document.getElementsByClassName("links-list")[0].children;
+        let linksList = Array.from(links).map(e => e.children);
+        this.cleanLinks(linksList);
+        if (about.getBoundingClientRect().top > 200) {
+            linksList[0][0].classList.add("active");
+        } else if (technologies.getBoundingClientRect().top > 200) {
+            linksList[1][0].classList.add("active");
+            about.children[0].classList.remove("slide-left");
+        } else if (projects.getBoundingClientRect().top > 200) {
+            linksList[2][0].classList.add("active");
+            technologies.children[0].classList.remove("slide-left");
+        } else if (career.getBoundingClientRect().top > 200) {
+            linksList[3][0].classList.add("active");
+            projects.children[0].classList.remove("slide-left");
+        } else if (contact.getBoundingClientRect().bottom - window.innerHeight > 40) {
+            linksList[4][0].classList.add("active");
+            career.children[0].classList.remove("slide-left");
+        } else {
+            linksList[5][0].classList.add("active");
+            contact.children[0].classList.remove("slide-left");
+        }
+    };
+
+    cleanLinks = (links) => {
+        links.forEach(link => {
+            link[0].classList.remove("active");
+        })
+    };
+
+
     render() {
         let {english} = this.state;
         return (
@@ -90,7 +127,7 @@ class App extends Component {
                 <Technologies english={english}/>
                 <Projects english={english}/>
                 <CareerPath english={english}/>
-                {/*<Footer english={english}/>*/}
+                <Footer english={english}/>
             </div>
         );
     }

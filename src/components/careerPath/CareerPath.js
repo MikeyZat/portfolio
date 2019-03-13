@@ -4,7 +4,7 @@ import '../../style/css/CareerPath.minx.css';
 const CareerPath = ({english}) => {
 
     return (<section id={"career"} className={"career-section"}>
-        <h2>{!english ? "Ścieżka kariery" : "Career path"}</h2>
+        <h2 className={"slide-left"}>{!english ? "Ścieżka kariery" : "Career path"}</h2>
         <div className={"timeline-box"}>
             <ul className={"timeline"}>
                 <li>
@@ -28,7 +28,7 @@ const CareerPath = ({english}) => {
                 <li>
                     <div className={"item"}>
                         <span className={"date"}>03.2019</span>
-                        <h3 className={"text"}>{!english ? "Opublikowanie największego dotychczas projektu : flaneczki.pl" : "Publishing the greatest project so far: flaneczki.pl"}</h3>
+                        <h3 className={"text"}>{!english ? "Opublikowanie największego dotychczas projektu  flaneczki.pl" : "Publishing the greatest project so far flaneczki.pl"}</h3>
                     </div>
                 </li>
             </ul>
