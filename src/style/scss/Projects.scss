@@ -5,7 +5,7 @@
   @extend %section-padding;
   h2 {
     @extend %section-title;
-    margin-bottom:100px;
+    margin-bottom: 100px;
   }
   .projects-container {
     display: flex;
@@ -24,10 +24,10 @@
         }
       }
       .project {
-        margin-top:50px !important;
+        margin-top: 50px !important;
         margin-bottom: 0 !important;
-        &.show{
-          margin-top:0 !important;
+        &.show {
+          margin-top: 0 !important;
         }
         .img-container {
           position: relative;
@@ -73,10 +73,10 @@
         }
         .info-container {
           overflow: auto !important;
-          &.left{
+          &.left {
             left: calc(-285px) !important;
           }
-          &.right{
+          &.right {
             left: calc(285px) !important;
           }
           z-index: 2 !important;
@@ -100,7 +100,16 @@
       margin: 70px 0;
       opacity: 0;
       transition: opacity 1s, margin-top .5s;
-
+      .fa-crown {
+        position: absolute;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: calc(-35px + -2vw);
+        font-size: calc(30px + 2vw);
+        color: #ffdf00;
+        transition: font-size .5s;
+      }
       .project-img {
         width: calc(285px);
         height: calc(380px);

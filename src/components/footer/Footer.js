@@ -12,17 +12,17 @@ const Footer = ({english}) => {
             <ul className={"social-media"}>
                 <li>
                     <a href={"https://www.facebook.com/profile.php?id=100000994784631"} target="_blank"
-                       rel="noopener noreferrer"><i className="fab fa-facebook-f"/></a>
+                       rel="noopener noreferrer"><i className="fab fa-facebook-f hide"/></a>
                 </li>
                 <li><a href={"https://www.linkedin.com/in/miko%C5%82aj-zatorski-108852161/"} target="_blank"
                        rel="noopener noreferrer">
-                    <i className="fab fa-linkedin-in"/>
+                    <i className="fab fa-linkedin-in hide"/>
                 </a>
                 </li>
                 <li>
                     <a href={"https://github.com/MikeyZat"} target="_blank"
                        rel="noopener noreferrer">
-                        <i className="fab fa-github"/>
+                        <i className="fab fa-github hide"/>
                     </a>
                 </li>
             </ul>

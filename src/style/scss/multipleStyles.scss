@@ -4,6 +4,7 @@
   text-align: center;
   font-size: calc(30px + 2vw);
   position: relative;
+  transition: font-size .5s;
   &.slide-left{
     &::after{
       left:-150%;

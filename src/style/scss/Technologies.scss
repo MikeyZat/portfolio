@@ -30,7 +30,7 @@
           margin: calc(15px + 2vw);
           img {
             opacity: 0;
-            transition: .2s transform;
+            transition: .2s transform, .5s width, .5s height;
             width: calc(30px + 4vw);
             height: calc(30px + 4vw);
             &.gulp {
@@ -46,6 +46,20 @@
               margin-top: 10px;
               width: calc(50px + 7vw);
               height: calc(50px + 7vw);
+            }
+          }
+          &.css-span{
+            .details{
+              left:calc(-50px + 2vw);
+            }
+            .name{
+              left:calc(-90px + 2vw);
+            }
+            &:hover{
+              .details,
+              .name{
+                left:calc(-70px + 2vw);
+              }
             }
           }
           &.rest-span {

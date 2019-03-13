@@ -24,7 +24,7 @@
       position: absolute;
       left: 0;
       bottom: 5px;
-      font-size: 12px
+      font-size: 12px;
     }
     .social-media {
       padding: 0;
@@ -38,28 +38,41 @@
         margin: calc(10px + 1vw);
         a {
           text-decoration: none;
-          color:white;
+          color: white;
           .fab {
+            &.hide {
+              width: 0;
+              opacity: 0;
+              height: 0;
+              font-size: 0 !important;
+            }
             text-align: center;
             font-size: calc(18px + 1vw);
-            padding:calc(5px + 0.5vw);
+            padding: calc(5px + 0.5vw);
             width: calc(28px + 2vw);
             height: calc(28px + 2vw);
             border-radius: 100%;
             -webkit-box-shadow: 0 0 18px 0 rgba(255, 255, 255, 1);
             -moz-box-shadow: 0 0 18px 0 rgba(255, 255, 255, 1);
             box-shadow: 0 0 18px 0 rgba(255, 255, 255, 1);
+            transition: .5s;
             &.fa-facebook-f {
               background: #3B5998;
             }
-            &.fa-linkedin-in{
+            &.fa-linkedin-in {
               background: #007bb5;
             }
-            &.fa-github{
+            &.fa-github {
               font-size: calc(24px + 2vw);
-              padding:2px;
+              padding: 2px;
               background: white;
-              color:#24292e;
+              color: #24292e;
+            }
+            &:hover {
+              transform: scale(0.8);
+              -webkit-box-shadow: 0 0 36px 0 rgba(255, 255, 255, 1);
+              -moz-box-shadow: 0 0 36px 0 rgba(255, 255, 255, 1);
+              box-shadow: 0 0 36px 0 rgba(255, 255, 255, 1);
             }
           }
         }
@@ -70,6 +83,7 @@
       font-size: calc(22px + 2vw);
       margin: 30px;
       text-shadow: 0 0 15px #cbcbcb;
+      transition: 1s;
       a {
         text-decoration: none;
         color: orange;
@@ -77,10 +91,20 @@
           display: block;
           font-size: calc(14px + 1vw);
         }
+        .fas {
+          transition: .5s;
+        }
+        &:hover {
+          .fas {
+            transform: scale(0.8);
+            text-shadow: 0 0 30px #cbcbcb;
+          }
+        }
       }
-
     }
   }
 }
+
+
 
 

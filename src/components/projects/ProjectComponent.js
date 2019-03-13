@@ -4,6 +4,7 @@ import '../../style/css/Projects.minx.css';
 const ProjectComponent = ({english, imgSrc, name, liveLink, githubLink, right}) => {
 
     return <article className={"project"}>
+        {name==="flaneczki.pl" && <i className="fas fa-crown"/>}
         <div className={"img-container"}>
             <img src={imgSrc} alt={name} className={"project-img"}/>
         </div>

@@ -101,12 +101,13 @@ class App extends Component {
         } else if (career.getBoundingClientRect().top > 200) {
             linksList[3][0].classList.add("active");
             projects.children[0].classList.remove("slide-left");
-        } else if (contact.getBoundingClientRect().bottom - window.innerHeight > 40) {
+        } else if (contact.getBoundingClientRect().bottom - window.innerHeight > 60) {
             linksList[4][0].classList.add("active");
             career.children[0].classList.remove("slide-left");
         } else {
             linksList[5][0].classList.add("active");
             contact.children[0].classList.remove("slide-left");
+            this.showSocials();
         }
     };
 
@@ -114,6 +115,17 @@ class App extends Component {
         links.forEach(link => {
             link[0].classList.remove("active");
         })
+    };
+
+    showSocials = () => {
+        let icons = Array.from(
+            document.getElementsByClassName("hide")
+        );
+        icons.forEach((icon, index) => {
+            setTimeout(() => {
+                icon.classList.remove("hide")
+            }, (index + 3) * 300)
+        });
     };
 
 
