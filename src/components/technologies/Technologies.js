@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../style/css/Technologies.minx.css';
-import Rating from './Rating';
 import Technology from "./Technology";
 
 const Technologies = ({english}) => {

@@ -18,7 +18,7 @@ const AboutMe = ({english}) => {
                 </article>
                 <article className="card third" id={"card3"}>
                     <h3>{!english?"Przyszłość":"Future"}</h3>
-                    <p>{!english?"W najbliższym czasie chciałbym zacząć uczyć się programowania w Node.js, aby tworzyć również back-end moich aplikacji. Tym samym chciałbym zostać full-stack developerem i w tym kierunku się dalej rozwijać.":"In the nearest future I would like to start learning Node.js. Therefore, I would be able not only to write front-end but back-end for my applications. Definitely, Full-Stack is something I would love to do in the future."}
+                    <p>{!english?"W najbliższym czasie chciałbym zacząć uczyć się programowania w Node.js, aby tworzyć również back-end moich aplikacji. Tym samym chciałbym zostać full-stack developerem i w tym kierunku się dalej rozwijać.":"In the nearest future I would like to start learning Node.js. Therefore, I would be able not only to write front-end but also back-end for my applications. Definitely, Full-Stack is something I would love to do in the future."}
                     </p>
                 </article>
             </div>
