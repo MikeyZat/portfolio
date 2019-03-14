@@ -5,7 +5,7 @@ const Footer = ({english}) => {
     return <footer id={"contact"} className={"contact-section"}>
         <h2 className={"slide-left"}>{!english ? "Kontakt" : "Contact"}</h2>
         <div className={"contact-info"}>
-            <div className={"email-container"}>
+            <div className={"email-container hideEmail"}>
                 <a href={"mailto:mikolajzatorski1@gmail.com"}><i className="fas fa-envelope"/>
                     <span>MikolajZatorski1@gmail.com</span></a>
             </div>

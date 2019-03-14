@@ -15,12 +15,17 @@
     align-items: center;
     @media screen and (min-width: 1430px) {
       justify-content: center;
-      &:hover .project .img-container {
-        &::before {
-          top: 0;
+      &:hover .project {
+        .fa-crown{
+          opacity:0;
         }
-        &::after {
-          bottom: 0;
+        .img-container {
+          &::before {
+            top: 0;
+          }
+          &::after {
+            bottom: 0;
+          }
         }
       }
       .project {
@@ -62,6 +67,9 @@
           }
         }
         &:hover {
+          .fa-crown{
+            opacity:1;
+          }
           .img-container {
             &::before {
               top: -100%;
@@ -108,7 +116,7 @@
         top: calc(-35px + -2vw);
         font-size: calc(30px + 2vw);
         color: #ffdf00;
-        transition: font-size .5s;
+        transition: font-size .5s, opacity .5s;
       }
       .project-img {
         width: calc(285px);

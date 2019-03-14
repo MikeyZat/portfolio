@@ -1,9 +1,12 @@
 import React from 'react';
 import '../../style/css/Header.minx.css';
 
-const Header = ({english,...props}) => {
-    return (<header className={"smoke-container"}>
-        <video src="smoke.mp4" autoPlay muted> </video>
+const Header = ({english, ...props}) => {
+    let playing = () =>{
+        document.getElementById("header-section").classList.add("go");
+    };
+    return (<header className={"smoke-container"} id={"header-section"}>
+        <video src="smoke.mp4" muted={true} autoPlay={true} onPlaying={playing}> </video>
         <h1>
             <span>M</span>
             <span>i</span>

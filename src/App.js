@@ -24,11 +24,16 @@ class App extends Component {
     };
 
     handleScroll = () => {
-        this.handleScrollNav();
-        this.handleScrollCards();
-        this.handleScrollTechs();
-        this.handleScrollProjects();
-        this.handleAllSectionsScroll();
+        try {
+            this.handleScrollNav();
+            this.handleScrollCards();
+            this.handleScrollTechs();
+            this.handleScrollProjects();
+            this.handleScrollEmail();
+            this.handleAllSectionsScroll();
+        } catch (e) {
+            console.log(e);
+        }
     };
 
     handleScrollNav() {
@@ -101,7 +106,7 @@ class App extends Component {
         } else if (career.getBoundingClientRect().top > 200) {
             linksList[3][0].classList.add("active");
             projects.children[0].classList.remove("slide-left");
-        } else if (contact.getBoundingClientRect().bottom - window.innerHeight > 60) {
+        } else if (contact.getBoundingClientRect().bottom - window.innerHeight > 100) {
             linksList[4][0].classList.add("active");
             career.children[0].classList.remove("slide-left");
         } else {
@@ -126,6 +131,14 @@ class App extends Component {
                 icon.classList.remove("hide")
             }, (index + 3) * 300)
         });
+    };
+
+    handleScrollEmail = () => {
+        let email = document.getElementsByClassName("hideEmail")[0];
+        if (email && email.getBoundingClientRect().top + 30 < window.innerHeight)
+            setTimeout(() => {
+                email.classList.remove("hideEmail");
+            }, 500);
     };
 
 
