@@ -4,7 +4,7 @@ import '../../style/css/Projects.minx.css';
 const ProjectComponent = ({english, imgSrc, name, liveLink, githubLink, right}) => {
 
     return <article className={"project"}>
-        {name==="flaneczki.pl" && <i className="fas fa-crown"/>}
+        {name === "flaneczki.pl" && <i className="fas fa-crown"/>}
         <div className={"img-container"}>
             <img src={imgSrc} alt={name} className={"project-img"}/>
         </div>
@@ -13,11 +13,11 @@ const ProjectComponent = ({english, imgSrc, name, liveLink, githubLink, right}) 
             <a href={liveLink} target="_blank" rel="noopener noreferrer" className={"live-link"}>
                 <span className={"text"}>Live</span>
             </a>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer"
-               className={"code-link"}>
+            {githubLink && <a href={githubLink} target="_blank" rel="noopener noreferrer"
+                              className={"code-link"}>
                 <i className="fab fa-github"/>
                 <span className={"text"}>{!english ? "Kod" : "Code"}</span>
-            </a>
+            </a>}
         </div>
     </article>
 };
