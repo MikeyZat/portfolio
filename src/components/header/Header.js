@@ -6,7 +6,7 @@ const Header = ({english, ...props}) => {
         document.getElementById("header-section").classList.add("go");
     };
     return (<header className={"smoke-container"} id={"header-section"}>
-        <video src="smoke.mp4" muted={true} autoPlay={true} onPlaying={playing}> </video>
+        <video src="smoke.mp4" muted={true} autoPlay={true} onPlaying={playing} playsInline={true}> </video>
         <h1>
             <span>M</span>
             <span>i</span>

@@ -10,7 +10,7 @@ const Projects = ({english}) => {
             <ProjectComponent english={english}
                               name={"flaneczki.pl"}
                               imgSrc={"flaneczki.png"}
-                              githubLink={""}
+                              githubLink={"#projects"}
                               liveLink={"https://flaneczki.pl/"}
                               right={true}/>
             <ProjectComponent english={english}
