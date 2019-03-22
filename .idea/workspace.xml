@@ -3,9 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="92d913da-47e3-47ac-9983-697ab26a59c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/technologies/Technologies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/technologies/Technologies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/airCondition.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/airCondition.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docker.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/docker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/flaneczki.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/flaneczki.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/git.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/git.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/gulp.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/gulp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/html.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/html.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/jest.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/jest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/js.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mysql.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/mysql.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/node.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/node.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pwa.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/pwa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/react.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/react.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/redux.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/redux.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webpack.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/webpack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webstorm.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/webstorm.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,9 +33,9 @@
     <session id="-1690360044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="5" />
@@ -32,7 +45,7 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,8 +55,8 @@
           <entry key="html" value="11" />
           <entry key="js" value="145" />
           <entry key="json" value="7" />
-          <entry key="md" value="2" />
-          <entry key="png" value="4" />
+          <entry key="md" value="3" />
+          <entry key="png" value="7" />
           <entry key="scss" value="140" />
         </counts>
       </usages-collector>
@@ -51,10 +64,10 @@
         <counts>
           <entry key="CSS" value="14" />
           <entry key="HTML" value="11" />
-          <entry key="Image" value="4" />
+          <entry key="Image" value="7" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="145" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="140" />
         </counts>
       </usages-collector>
@@ -69,7 +82,7 @@
           <entry key="html" value="32" />
           <entry key="js" value="14912" />
           <entry key="json" value="73" />
-          <entry key="md" value="380" />
+          <entry key="md" value="385" />
           <entry key="scss" value="16094" />
         </counts>
       </usages-collector>
@@ -79,7 +92,7 @@
           <entry key="HTML" value="32" />
           <entry key="JSON" value="73" />
           <entry key="JavaScript" value="14912" />
-          <entry key="PLAIN_TEXT" value="347" />
+          <entry key="PLAIN_TEXT" value="352" />
           <entry key="SCSS" value="16094" />
           <entry key="UNKNOWN" value="33" />
         </counts>
@@ -87,17 +100,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/aboutMe/AboutMe.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="367" selection-start-line="20" selection-start-column="367" selection-end-line="20" selection-end-column="367" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,12 +165,12 @@
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/src/components/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/components/header/Header.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/projects/ProjectComponent.js" />
         <option value="$PROJECT_DIR$/src/components/projects/Projects.js" />
         <option value="$PROJECT_DIR$/src/components/technologies/Technologies.js" />
         <option value="$PROJECT_DIR$/src/components/aboutMe/AboutMe.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,33 +218,12 @@
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="aboutMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="technologies" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,22 +291,23 @@
       <workItem from="1552564737507" duration="1050000" />
       <workItem from="1552565990685" duration="1375000" />
       <workItem from="1552569120641" duration="108000" />
-      <workItem from="1552590440970" duration="415000" />
+      <workItem from="1552590440970" duration="1220000" />
+      <workItem from="1553289907825" duration="1710000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113617000" />
+    <option name="totallyTimeSpent" value="116132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="781" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.3373656" />
       <window_info id="Structure" order="1" sideWeight="0.50107527" side_tool="true" weight="0.33333334" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998565" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32568148" />
@@ -565,13 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408" />
@@ -609,6 +586,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="367" selection-start-line="20" selection-start-column="367" selection-end-line="20" selection-end-column="367" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/mysql.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docker.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mysql.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
